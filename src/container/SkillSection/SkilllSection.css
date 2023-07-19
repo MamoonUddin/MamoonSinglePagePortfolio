@@ -1,0 +1,43 @@
+/* SkillSection Styles */
+.software-skill-inline {
+    margin: 0;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: "Poppins";
+    padding: 0;
+  }
+  
+  .dev-icons ul {
+    padding-left: 0;
+    list-style: none;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  
+  .software-skill-inline:hover {
+    color: var(--pink);
+  }
+  
+
+.software-skill-inline svg{
+  margin: var(--box-padding);
+  padding: var(--box-padding);
+  width: 100px;
+  height: 100px;
+}
+
+.software-skill-inline p{
+  font-size: var(--font-size-normal);
+}
+  /* End of SkillSection Styles */
+  

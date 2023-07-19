@@ -1,0 +1,122 @@
+/* Global Styles */
+
+/* Font Imports */@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+:root {
+  /* Font Sizes */
+  --font-size-small: 1.8rem;
+  --font-size-normal: 2.2rem;
+  --font-size-medium: 2.8rem;
+  --font-size-medium-1: 3.6rem;
+  --font-size-large: 5.5rem;
+  --font-size-huge: 7.5rem;
+
+  /* Font Stack */
+  --font-stack: 'Hk Grotesk', sans-serif;
+
+  /* Line Heights */
+  --line-height-normal: 1.7;
+  --line-height-small: 1.2;
+
+  /* Colors */
+  --black: #000;
+  --pink: #ff3258;
+  --white: #f0e9f2;
+  --white-1: #e5e5e6da;
+
+  /* Container Widths */
+  --container-max-width: 1180px;
+  --container-normal-width: 800px;
+  --container-medium-width: 700px;
+  --container-small-width: 500px;
+
+  /* Gutters */
+  --gutter-huge: 12rem;
+  --gutter-medium: 6rem;
+  --gutter-normal: 3rem;
+  --gutter-small-1: 2.5rem;
+  --gutter-small: 2rem;
+
+  /* Borders */
+  --border-light: 1px solid rgb(36, 35, 35);
+
+  /* Reusable values */
+  --box-padding: 15px;
+  --box-border-radius: 10px;
+  --button-padding: 15px;
+  --button-border-radius: 5px;
+}
+
+/* Base Styles */
+html {
+  font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--font-size-small);
+  font-family: var(--font-stack);
+  font-weight: 400;
+  color: var(--white-1);
+  line-height: var(--line-height-normal);
+  background: var(--black);
+  overflow-x: hidden;
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+section h1, section h2 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Oswald', sans-serif;
+  color: var(--pink);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+/* Media Queries */
+@media (max-width: 1600px) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+/* End of Global Styles and Media Queries */
+

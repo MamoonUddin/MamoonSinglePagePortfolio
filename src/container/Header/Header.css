@@ -1,0 +1,59 @@
+/* Header Styles */
+.section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px 'Oswald', sans-serif;
+    color: var(--pink);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+  
+  .display-4 {
+    font-weight: 300;
+    font-family: Roboto, sans-serif!important;
+    font-size: 6rem!important;
+    line-height: 6rem;
+    letter-spacing: -0.015625em!important;
+  }
+  
+  p {
+    margin-bottom: 16px;
+  }
+  
+  .header-button {
+    margin: 0;
+    border: none;
+    overflow: visible;
+    border-radius: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 30px;
+    vertical-align: middle;
+    font-size: 0.875rem;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.1s ease-in-out;
+    background-color: #222;
+    color: #ededed;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+  
+  .header-button:hover {
+    color: var(--pink);
+  }
+  
+.button-section{
+    display: flex;
+    justify-content: center;
+  }
+
+.button-section a{
+  padding: 5px;
+}
+
+
+  /* End of Header Styles */
+  
