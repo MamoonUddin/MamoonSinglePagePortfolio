@@ -3,19 +3,22 @@ import emailjs from '@emailjs/browser';
 import "./ContactForm.css";
 import {FaPaperPlane} from "react-icons/fa";
 
+
 export default function ContactForm() {
   const form = useRef();
   
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_0jiqbb9','template_z37vwud', form.current,'gBpGvMErweIkkpNfH')
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID,process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current,process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       .then(() => {
           form.current.reset();
+          
       }, (error) => {
           console.log(error.text);
       });
   };
+  
   
   return (
     <form ref={form} onSubmit={sendEmail} id="contact-form" className="form-horizontal" role="form">
