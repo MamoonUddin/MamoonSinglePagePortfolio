@@ -1,6 +1,6 @@
 import React from 'react';
 import "./NavBar.css";
-import Resume from "../../assets/MamoonGeneralResume.pdf"
+import Resume from "../../assets/data/MamoonResume.pdf"
 
 export default function Navbar() {
   return (
@@ -11,7 +11,7 @@ export default function Navbar() {
           <p className="nav__item"><a href="#certificates" className='nav__link'>Certificates</a></p>
           <p className="nav__item"><a href="#project" className='nav__link'>Projects</a></p>
           <p className="nav__item"><a href="#contact" className='nav__link'>Contact</a></p>
-          <p className="nav__item"><a href={Resume} download="MamoonUddinResume" className='nav__link'>Resume</a></p>
+          <p className="nav__item"><a href={Resume} download="MamoonUddinResume.pdf" className='nav__link'>Resume</a></p>
         </div>
       </div>
     </div>

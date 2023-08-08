@@ -1,14 +1,13 @@
 import React from 'react';
 import WebsiteLogos from '../WebsiteLogos/WebsiteLogos';
 import ContactForm from "../../component/ContactForm/ContactForm";
-import {AiOutlineDownload} from 'react-icons/ai';
 import "./Footer.css";
-import Resume from "../../assets/MamoonGeneralResume.pdf"
 import {FaMapMarker , FaPhone , FaEnvelope} from 'react-icons/fa';
 
 export default function Footer() {
   return (
     <div>
+      
       <div>
         <h1 className='section-header' id='contact'>Get in Touch</h1>
       </div>

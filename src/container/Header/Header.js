@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import Typewriter from 'typewriter-effect';
 import WebsiteLogos from "../WebsiteLogos/WebsiteLogos";
-import Resume from "../../assets/MamoonGeneralResume.pdf"
+import Resume from "../../assets/data/MamoonResume.pdf"
 
 export default function Header() {
   return (

@@ -45,7 +45,7 @@ export default function ProjectSection() {
 
     setSelectedTagCounts(selectedCounts);
     setUnselectedTagCounts(unselectedCounts);
-  }, [selectedTags]); // Include selectedTags and filteredProjects in the dependency array
+  }, [selectedTags]); // Include selectedTags in the dependency array
 
   // Function to handle tag click event
   const handleTagClick = (tag) => {

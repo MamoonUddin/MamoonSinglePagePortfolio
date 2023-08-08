@@ -1,6 +1,6 @@
 import React from "react";
 import "./SkilllSection.css";
-import {SiMysql, SiPython , SiRstudio, SiJavascript , SiCplusplus , SiHtml5 , SiCss3 , SiTensorflow , SiPytorch , SiPandas  , SiReact, SiKeras} from "react-icons/si";
+import {SiMysql, SiPython , SiRstudio, SiJavascript , SiCplusplus , SiHtml5 , SiCss3 , SiTensorflow , SiPandas  , SiReact, SiKeras} from "react-icons/si";
 
 
 
