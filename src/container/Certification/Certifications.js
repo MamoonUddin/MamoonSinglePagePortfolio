@@ -38,7 +38,7 @@ export default function Certifications() {
           <div
             key={index}
             className={`certification-slide ${index === currentSlide ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/${certification.Image})` }}
+            style={{ backgroundImage: `url(${certification.Image})` }}
           >
             <a href={certification.Link} target="_blank" rel="noopener noreferrer">
             <div className="certification-content">
