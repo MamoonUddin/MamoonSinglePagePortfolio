@@ -1,6 +1,5 @@
 /* ProjectSection Styles */
 
-
 h2 {
   font-weight: 300;
   font-family: Roboto, sans-serif !important;
@@ -38,6 +37,25 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 15px;
+}
+
+.toggle-button {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.toggle-button button {
+  background-color: var(--pink);
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.toggle-button button:hover {
+  background-color: #ff518a;
 }
 
 .project-button {
@@ -118,4 +136,3 @@ h2 {
 }
 
 /* End of ProjectSection Styles and Media Queries */
-

@@ -8,6 +8,7 @@ export default function ProjectSection() {
   const [selectedTags, setSelectedTags] = useState([]);
   const [selectedTagCounts, setSelectedTagCounts] = useState({});
   const [unselectedTagCounts, setUnselectedTagCounts] = useState({});
+  const [showTags, setShowTags] = useState(false); // State for showing/hiding tags
 
   // Filter projects based on selected tags
   const filteredProjects = data.filter((project) => {
@@ -18,7 +19,7 @@ export default function ProjectSection() {
     }
   });
 
-  // useEffect to update selected and unselected tag counts when selectedTags change
+  // useEffect to update selected and unselected tag counts when selectedTags or filteredProjects change
   useEffect(() => {
     // Count the occurrences of each tag in the filtered projects
     const selectedCounts = {};
@@ -44,7 +45,7 @@ export default function ProjectSection() {
 
     setSelectedTagCounts(selectedCounts);
     setUnselectedTagCounts(unselectedCounts);
-  }, [selectedTags]);
+  }, [selectedTags]); // Include selectedTags and filteredProjects in the dependency array
 
   // Function to handle tag click event
   const handleTagClick = (tag) => {
@@ -58,27 +59,35 @@ export default function ProjectSection() {
   return (
     <section id="project" className="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
       <h1 className="uk-margin-xlarge-left uk-light"> Projects</h1>
+      {/* Toggle button for showing/hiding tags */}
+      <div className="toggle-button">
+        <button onClick={() => setShowTags(!showTags)}>
+          {showTags ? "Hide Tags" : "Show Tags"}
+        </button>
+      </div>
       <div className="button-holder">
         {/* Render buttons for selected tags */}
-        {Object.entries(selectedTagCounts).map(([tag, count]) => (
-          <button
-            key={tag}
-            onClick={() => handleTagClick(tag)}
-            className={selectedTags.includes(tag) ? "project-button selected" : "project-button"}
-          >
-            <span>{tag}</span> <span>{count}</span>
-          </button>
-        ))}
+        {showTags &&
+          Object.entries(selectedTagCounts).map(([tag, count]) => (
+            <button
+              key={tag}
+              onClick={() => handleTagClick(tag)}
+              className={selectedTags.includes(tag) ? "project-button selected" : "project-button"}
+            >
+              <span>{tag}</span> <span>{count}</span>
+            </button>
+          ))}
         {/* Render buttons for unselected tags */}
-        {Object.entries(unselectedTagCounts).map(([tag, count]) => (
-          <button
-            key={tag}
-            onClick={() => handleTagClick(tag)}
-            className={!selectedTags.includes(tag) ? "project-button unselected" : "project-button"}
-          >
-            <span>{tag}</span> <span>{count}</span>
-          </button>
-        ))}
+        {showTags &&
+          Object.entries(unselectedTagCounts).map(([tag, count]) => (
+            <button
+              key={tag}
+              onClick={() => handleTagClick(tag)}
+              className={!selectedTags.includes(tag) ? "project-button unselected" : "project-button"}
+            >
+              <span>{tag}</span> <span>{count}</span>
+            </button>
+          ))}
       </div>
       <div className="uk-margin-xlarge-left uk-margin-xlarge-right">
         <ul className="uk-margin-xlarge-left uk-margin-xlarge-right">
