@@ -21,7 +21,7 @@ export default function ContactForm() {
   
   
   return (
-    <form ref={form} onSubmit={sendEmail} id="contact-form" className="form-horizontal" role="form">
+    <form ref={form} onSubmit={sendEmail} id="contact-form" className="form-horizontal" >
        
       <div className="form-group">
         <div className="col-sm-12">

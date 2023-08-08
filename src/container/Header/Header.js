@@ -19,7 +19,7 @@ export default function Header() {
               }}
             />
           </h2>
-          <p>
+          <p className="p-header">
             Greetings! I'm Mamoon, a coding enthusiast since high school. I kick-started my journey by creating a Unity and C# game for a high school coding competition, and ever since, I've been hooked on coding. I've ventured into various domains, including web development, Python, and even participated in coding competitions. Now, as a Computer Science graduate, my passion lies in data science and software development, and I'm always eager to expand my knowledge and skills in these exciting fields.
           </p>
           <div className="button-section">

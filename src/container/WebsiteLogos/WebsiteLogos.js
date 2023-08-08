@@ -21,10 +21,14 @@ export default function WebsiteLogos({
 }) {
   return (
     <ul className="social-media-list">
-      {/* Render website logos based on provided links */}
       {github && (
         <li>
-          <a href={github} target="_blank" rel="noopener noreferrer" className="icons">
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icons"
+          >
             <FaGithub />
           </a>
         </li>
@@ -32,7 +36,12 @@ export default function WebsiteLogos({
 
       {linkedIn && (
         <li>
-          <a href={linkedIn} target="_blank" rel="noopener noreferrer" className="icons">
+          <a
+            href={linkedIn}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icons"
+          >
             <FaLinkedin />
           </a>
         </li>
@@ -48,7 +57,12 @@ export default function WebsiteLogos({
 
       {medium && (
         <li>
-          <a href={medium} target="_blank" rel="noopener noreferrer" className="icons">
+          <a
+            href={medium}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icons"
+          >
             <FaMedium />
           </a>
         </li>
@@ -56,7 +70,12 @@ export default function WebsiteLogos({
 
       {tableau && (
         <li>
-          <a href={tableau} target="_blank" rel="noopener noreferrer" className="icons">
+          <a
+            href={tableau}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icons"
+          >
             <SiTableau />
           </a>
         </li>
@@ -64,7 +83,12 @@ export default function WebsiteLogos({
 
       {youtube && (
         <li>
-          <a href={youtube} target="_blank" rel="noopener noreferrer" className="icons">
+          <a
+            href={youtube}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icons"
+          >
             <IoLogoYoutube />
           </a>
         </li>
@@ -72,7 +96,12 @@ export default function WebsiteLogos({
 
       {website && (
         <li>
-          <a href={website} target="_blank" rel="noopener noreferrer" className="icons">
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icons"
+          >
             <AiOutlineGlobal />
           </a>
         </li>
