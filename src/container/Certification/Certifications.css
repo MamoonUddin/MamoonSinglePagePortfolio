@@ -41,9 +41,7 @@
 
 .certification-slide {
   position: relative;
-  width: 60%; /* Reduce width */
-  max-width: 600px; /* Limit maximum width */
-  height: 60vh;
+  height: 75vh;
   display: none;
   align-items: center;
   justify-content: center;
@@ -53,9 +51,6 @@
   transition: opacity 0.5s ease-in-out;
  
   margin: 0 auto; /* Center horizontally */
-  border: 2px solid #222; /* Add border */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow */
-  border-radius: 10px; /* Add border radius */
 }
 
 .certification-slide.active {
