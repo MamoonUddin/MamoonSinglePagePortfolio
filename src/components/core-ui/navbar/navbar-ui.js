@@ -96,21 +96,23 @@ function NavbarUI({ theme, shortname, classes, handleDrawerOpen, handleDrawerClo
 
                         {headerData.resumePdf && (
                             <Fade left>
-                                <a
-                                    href={headerData.resumePdf}
-                                    download='resume'
-                                    target='_blank'
-                                    rel='noreferrer'
-                                >
+                                
                                     <div className={classes.drawerItem}>
                                         <HiDocumentText
                                             className={classes.drawerIcon}
                                         />
-                                        <span className={classes.drawerLinks}>
+                                        <a
+                                            href={headerData.resumePdf}
+                                            download='resume'
+                                            target='_blank'
+                                            rel='noreferrer'
+                                        >
+                                        <span className={classes.drawerLinks} style={{ color: theme.primary }}>
                                             Resume
                                         </span>
+                                        </a>
                                     </div>
-                                </a>
+                               
 
                             </Fade>
                                 

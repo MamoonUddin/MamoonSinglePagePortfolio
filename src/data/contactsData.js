@@ -1,5 +1,5 @@
 export const contactsData = {
-    email: 'mamoonuddin17@gmail.com',
+    email: 'mamoonuddinwork@gmail.com',
     phone: '832-745-0685',
     address: 'Greater Houston, Texas, USA ',
     github: 'https://github.com/MamoonUddin',

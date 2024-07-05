@@ -23,25 +23,27 @@ function SingleProjectUI({ id, name, desc, tags, code, demo, image, theme, class
                     </h2>
                     <img src={image ? image : placeholder} alt={name} />
                     <div className='project--showcaseBtn'>
-                        <a
-                            href={demo}
-                            target='_blank'
-                            rel='noreferrer'
-                            className={classes.iconBtn}
-                            aria-labelledby={`${name
-                                .replace(' ', '-')
-                                .toLowerCase()} ${name
+                        {demo && (
+                            <a
+                                href={demo}
+                                target='_blank'
+                                rel='noreferrer'
+                                className={classes.iconBtn}
+                                aria-labelledby={`${name
                                     .replace(' ', '-')
-                                    .toLowerCase()}-demo`}
-                        >
-                            <FaPlay
-                                id={`${name
-                                    .replace(' ', '-')
-                                    .toLowerCase()}-demo`}
-                                className={classes.icon}
-                                aria-label='Demo'
-                            />
-                        </a>
+                                    .toLowerCase()} ${name
+                                        .replace(' ', '-')
+                                        .toLowerCase()}-demo`}
+                            >
+                                <FaPlay
+                                    id={`${name
+                                        .replace(' ', '-')
+                                        .toLowerCase()}-demo`}
+                                    className={classes.icon}
+                                    aria-label='Demo'
+                                />
+                            </a>
+                        )}
                         <a
                             href={code}
                             target='_blank'

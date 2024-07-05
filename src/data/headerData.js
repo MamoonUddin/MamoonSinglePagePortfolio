@@ -1,10 +1,11 @@
-import Resume from "./MamoonResume.pdf"
+import Resume from "./MamoonResume.pdf";
+import ProfilePicture from "../assets/jpg/ProfilePicture.jpg";
 
 export const headerData = {
     name: 'Mamoon Uddin',
     title: "Hello! I am",
-    desciption: "Hello! I am Mamoon, a professional and passionate programmer in my daily life. A quick learner with a self-learning attitude. I love to learn and explore new technologies and am Passionate about Problem Solving. ",
-    image: 'https://lh3.googleusercontent.com/a/AAcHTtfQXUvyctFaXkToDV12K8OqgyR-D0-wg93N1py7l2huQNY=s288-c-no',
-    imagebw: 'https://lh3.googleusercontent.com/a/AAcHTtfQXUvyctFaXkToDV12K8OqgyR-D0-wg93N1py7l2huQNY=s288-c-no',
+    desciption: "Hi! I'm a passionate programmer who loves creating innovative and user-friendly applications. With a knack for problem-solving and a keen interest in the latest tech trends, I strive to build digital experiences that truly make an impact.",
+    image: ProfilePicture,
+    imagebw: ProfilePicture,
     resumePdf: Resume
 }
